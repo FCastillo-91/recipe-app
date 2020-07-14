@@ -1,0 +1,56 @@
+{
+  "freeFrom": [
+    {
+      "id": 1,
+      "name": "Dairy"
+    },
+    {
+      "id": 2,
+      "name": "Egg"
+    },
+    {
+      "id": 3,
+      "name": "Gluten"
+    },
+    {
+      "id": 4,
+      "name": "Grain"
+    },
+    {
+      "id": 5,
+      "name": "Peanut"
+    },
+    {
+      "id": 6,
+      "name": "Seafood"
+    },
+    {
+      "id": 7,
+      "name": "Seasame"
+    },
+    {
+      "id": 8,
+      "name": "Shellfish"
+    },
+    {
+      "id": 9,
+      "name": "Soy"
+    },
+    {
+      "id": 10,
+      "name": "Sulfite"
+    },
+    {
+      "id": 11,
+      "name": "Tree Nut"
+    },
+    {
+      "id": 12,
+      "name": "Wheat"
+    },
+    {
+      "id": 13,
+      "name": "Meat"
+    }
+  ]
+}

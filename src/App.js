@@ -1,26 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import intoleranceList from "./stubs/intoleranceList";
 
-function App() {
+import Header from "../src/components/Header/Header";
+import SearchForm from "./components/SearchForm/SearchForm";
+import RecipeResults from "./components/RecipeResults/RecipeResults";
+import Recipe from "./components/Recipe/Recipe";
+import { useAppState } from "./context/AppState";
+import banner from "../src/assets/banner.jpg";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { getRecipes } from "./api/recipes.api";
+
+const App = () => {
+  const {
+    ingredients,
+    recipeResults,
+    setRecipeResults,
+    selectedFreeFrom,
+  } = useAppState();
+
+  const searchRecipes = () => {
+    if (ingredients.length > 1) {
+      getRecipes(ingredients, selectedFreeFrom).then(setRecipeResults);
+    }
+    console.log(ingredients, selectedFreeFrom.toString());
+  };
+
+  const style = { backgroundImage: `url(${banner})` };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App" style={style}>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <div className="search-form-area">
+              <SearchForm
+                intolerances={intoleranceList.freeFrom}
+                searchRecipes={searchRecipes}
+              />
+            </div>
+            <div className="container">
+              <div className="recipe-results-area">
+                <div className="row">
+                  <RecipeResults recipes={recipeResults} />
+                </div>
+              </div>
+            </div>
+          </Route>
+          <Route path="/recipe/:id">
+            <div className="container">
+              <Recipe />
+            </div>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

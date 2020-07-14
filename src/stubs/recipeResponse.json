@@ -1,0 +1,85 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "recipeTitle": "Lasagne",
+      "recipeURLImage": "https://realfood.tesco.com/media/images/LASAGNE-2-CLEAN-472x310-mini-0227e2e4-ca82-4f38-ac0f-3776fccf3304-0-472x310.jpg",
+      "recipeMethod": "Method: In a large pan, heat the olive oil over a low heat. Fry the onion, carrot, celery and garlic for 5 mins, or until softened. Add the mince and fry on a medium heat until golden. Turn up the heat, pour in the wine and bubble until reduced. Stir in the tomato purée, chopped tomatoes and stock. Add in the Worcestershire sauce and simmer for 15 mins, or until the liquid has reduced. Season.\nMeanwhile, make the white sauce. Melt the butter in a small saucepan over a low heat and add the flour. Whisk until combined and cook on low for 1-2 mins. Remove from the heat and gradually whisk in the milk until you have a loose sauce. Season. Return to a gentle heat and whisk constantly until the sauce thickens.\nPreheat the oven to gas 6, 200°C, fan 180°C. Layer up the lasagne in a baking dish, starting with a third each of the ragu, then the pasta, then the white sauce. Repeat twice. Top with the Parmesan and mozzarella then bake in the oven for 40-45 mins, until piping hot and crisp and bubbling on top. Serve immediately.",
+      "recipeIngredients": [
+        "1 tbsp olive oil",
+        "1 onion, diced",
+        "1 carrot, diced",
+        "1 celery stalk, diced",
+        "2 garlic cloves, finely sliced",
+        "250g beef mince",
+        "250g pork mince",
+        "1 tbsp tomato purée",
+        "400g tin chopped tomatoes",
+        "200ml beef stock",
+        "200ml red wine",
+        "1 tsp Worcestershire sauce",
+        "9-12 lasagne sheets (depending on the size of your baking dish)",
+        "50g Parmesan, grated",
+        "150g pack mozzarella, shredded",
+        "For the white sauce",
+        "50g butter",
+        "50g plain flour",
+        "550ml semi-skimmed milk"
+      ],
+      "freeFrom": [2, 4, 5, 6, 7, 8, 9, 11],
+      "cuisineType": "italian",
+      "calories": "500 calories"
+    },
+    {
+      "id": 2,
+      "recipeTitle": "Chicken Chow Mein",
+      "recipeURLImage": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--12138_11.jpg?itok=UIKFEP9I",
+      "recipeMethod": "Use a potato peeler to remove the skin from the ginger. Discard skin, then carefully grate 1 tbsp from the root. Put in a bowl, crush in the garlic, and add the ketchup, oyster sauce, soy sauce and 3 tbsp water. Stir.\n\nUse a sharp knife to cut the pepper into quarters on a board. Remove the seeds and stalk, then slice diagonally into strips. Cut the ends from the spring onions, and cut the green and white of the onion lengthways. Open the bag of beansprouts. Cut the chicken into bite-size pieces.\n\nBoil a large pan of water on the hob. when the water is boiling, drop in the noodles, turn off the heat and set the timer to 4 mins. when the time is up, drain in a colander or a large sieve in the sink. ask an adult to help you.\n\nWith everything prepared, you can now start cooking. Heat the wok – it’s hot enough when it starts to smoke. add the oil and chicken. Use a wooden spoon to keep moving the chicken around the wok until it is half white, half pink. add the pepper and stir-fry for a further 1 min.\n\nPour the sauce into the wok and stir well until bubbling.\n\nAdd the noodles, beansprouts and spring onions a handful at a time, then toss into the sauce until it is well coated, stirring constantly until the beansprouts wilt. Serve in bowls – an easy way is to use tongs.",
+      "recipeIngredients": [
+        "thumb-size piece fresh root ginger",
+        "2 garlic cloves",
+        "3 tbsp tomato ketchup",
+        "2 tbsp oyster sauce",
+        "2 tbsp reduced-salt soy sauce",
+        "1 large red pepper",
+        "5 spring onions",
+        "half a 400g bag beansprouts",
+        "1 large or 2 small chicken breasts",
+        "3 nests medium egg noodles",
+        "1 tbsp sesame oil"
+      ],
+      "freeFrom": [1, 4, 5, 6, 8, 11, 12],
+      "cuisineType": "chinese",
+      "calories": "700 calories"
+    },
+    {
+      "id": 3,
+      "recipeTitle": "Beef Casserole",
+      "recipeURLImage": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/rich_beef_and_mushroom_62012_16x9.jpg",
+      "recipeMethod": "Preheat the oven to 180C/160C Fan/Gas 4. Season the beef well with salt and pepper.\n\nHeat half of the oil in a large, non-stick frying pan and fry the beef in two batches for 2–3 minutes, or until browned on all sides. Transfer to a casserole dish using a slotted spoon or spatula once each batch is done.\n\nAdd the remaining oil and the onions to the pan and fry over a medium–high heat for 4–5 minutes, or until lightly browned. Place the onions into the casserole dish and sprinkle with the flour and dried herbs. Toss well together.\n\nPour the red wine and stock into the casserole dish and add the tomato purée and bay leaf. Stir well and bring to a simmer on the hob. Cover with a lid and bake in the oven for 1½ hours.\n\nCarefully remove the casserole from the oven and stir in the carrots and mushrooms. Cover and bake for a further 45 minutes, or until the beef and vegetables are just tender.\n\nMeanwhile, to make the kale mashed potato, place the potatoes into a large saucepan and cover with cold water. Bring to the boil and cook for about 15 minutes, or until very tender. Drain well then return to the saucepan. Mash with the butter and milk until smooth. Season with salt and pepper.\n\nPlace the kale into a saucepan and add 500ml/18fl oz water. Cover with a lid and bring to the boil for 5 minutes, or until tender, removing the lid and stirring the kale three or four times as it cooks. Drain well then stir into the mash.\n\nServe the kale mash alongside the casserole, garnished with the parsley.",
+      "recipeIngredients": [
+        "700g/1lb 9oz braising steak, trimmed of excess fat and cut into 3-cm/1¼-in chunks",
+        "2 tbsp olive or sunflower oil",
+        "2 onions, thinly sliced",
+        "2 tbsp plain flour",
+        "2 tsp dried mixed herbs",
+        "150ml/5fl oz red wine",
+        "450ml/16fl oz beef stock, made with 1 stock cube",
+        "2 tbsp tomato purée",
+        "1 bay leaf",
+        "3 carrots (about 300g/10½oz), peeled and thickly sliced",
+        "300g/10½oz closed cup mushrooms, sliced",
+        "sea salt and freshly ground black pepper",
+        "handful fresh flatleaf parsley, roughly chopped, to garnish",
+        "575g/1lb 4½oz floury potatoes, preferably Maris Piper or King Edward, peeled and cut into roughly 5-cm/2-in chunks",
+        "25g/1oz butter",
+        "4 tbsp semi-skimmed milk",
+        "100g/3½oz kale, trimmed, hard stalks removed, roughly chopped",
+        "sea salt and freshly ground black pepper"
+      ],
+      "freeFrom": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "cuisineType": "british",
+      "calories": "1000 calories"
+    }
+  ]
+}
