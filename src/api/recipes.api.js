@@ -9,17 +9,17 @@ const recipeFetch = async (endPoint, query = null) => {
 
   const res = await fetch(url);
   const json = await res.json();
-  return json.results;
+  return json;
 };
 
 export const getRecipes = async (ingredients, intolerances = null) => {
-  console.log({intolerances});
   const endPoint = `/recipes/search`;
   let query = `${ingredients.toString()}`;
   if (intolerances) {
     query += `&intolerances=${intolerances.toString()}`;
   }
-  return recipeFetch(endPoint, query);
+  const recipes = recipeFetch(endPoint, query);
+  return recipes.results;
 };
 
 export const getSingleRecipe = async (id) => {
