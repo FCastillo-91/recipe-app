@@ -6,10 +6,9 @@ const recipeFetch = async (endPoint, query = null) => {
   if (query) {
     url += `&query=${query}`;
   }
-
   const res = await fetch(url);
-  const json = await res.json();
-  return json;
+  let data = await res.json();
+  return data;
 };
 
 export const getRecipes = async (ingredients, intolerances = null) => {
@@ -18,7 +17,7 @@ export const getRecipes = async (ingredients, intolerances = null) => {
   if (intolerances) {
     query += `&intolerances=${intolerances.toString()}`;
   }
-  const recipes = recipeFetch(endPoint, query);
+  const recipes = await recipeFetch(endPoint, query);
   return recipes.results;
 };
 

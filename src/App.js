@@ -23,7 +23,6 @@ const App = () => {
     if (ingredients.length > 1) {
       getRecipes(ingredients, selectedFreeFrom).then(setRecipeResults);
     }
-    console.log(ingredients, selectedFreeFrom.toString());
   };
 
   const style = { backgroundImage: `url(${banner})` };

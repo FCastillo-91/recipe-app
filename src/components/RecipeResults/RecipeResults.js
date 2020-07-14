@@ -2,6 +2,9 @@ import React from "react";
 import RecipeCard from "./RecipeCard/RecipeCard";
 
 const RecipeResults = ({ recipes }) => {
+  if (!recipes) {
+    return null;
+  }
   return recipes.map((recipe) => {
     return (
       <RecipeCard
