@@ -1,8 +1,7 @@
 const baseUrl = `https://api.spoonacular.com`;
-const apiKey = `d93ca12f2d434537947d919d1ce04988`;
 
 const recipeFetch = async (endPoint, query = null) => {
-  let url = `${baseUrl}${endPoint}?apiKey=${apiKey}`;
+  let url = `${baseUrl}${endPoint}?apiKey=${process.env.REACT_APP_RECIPE_API_KEY}`;
   if (query) {
     url += `&query=${query}`;
   }

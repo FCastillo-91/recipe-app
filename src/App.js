@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import intoleranceList from "./stubs/intoleranceList";
 
@@ -19,9 +19,13 @@ const App = () => {
     selectedFreeFrom,
   } = useAppState();
 
-  const searchRecipes = () => {
-    if (ingredients.length > 1) {
-      getRecipes(ingredients, selectedFreeFrom).then(setRecipeResults);
+  const correctAmountOfIngredients = ingredients.length > 1;
+  const [haveSearched, setHaveSearched] = useState(false);
+
+  const searchRecipes = async () => {
+    if (correctAmountOfIngredients) {
+      await getRecipes(ingredients, selectedFreeFrom).then(setRecipeResults);
+      setHaveSearched(true);
     }
   };
 
@@ -42,7 +46,14 @@ const App = () => {
             <div className="container">
               <div className="recipe-results-area">
                 <div className="row">
-                  <RecipeResults recipes={recipeResults} />
+                  {haveSearched &&
+                    correctAmountOfIngredients &&
+                    recipeResults.length > 0 && (
+                      <RecipeResults recipes={recipeResults} />
+                    )}
+                  {haveSearched &&
+                    correctAmountOfIngredients &&
+                    recipeResults.length === 0 && <p>No recipes found</p>}
                 </div>
               </div>
             </div>
