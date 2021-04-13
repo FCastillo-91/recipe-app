@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getSingleRecipe } from "../../api/recipes.api";
-// import {
-//   recipeCuisineAdapter,
-//   recipeIngredientAdapter,
-//   recipeInstructionsAdapter,
-// } from "./adapters";
 
 const Recipe = () => {
   const { id } = useParams();
@@ -35,6 +30,7 @@ const Recipe = () => {
 
   let instructions = null;
   if (recipe.analyzedInstructions) {
+    // eslint-disable-next-line array-callback-return
     recipe.analyzedInstructions.map((instruct) => {
       instructions = instruct.steps.map((item) => {
         return (
@@ -59,8 +55,12 @@ const Recipe = () => {
             <h5>Method</h5>
             <ul className="card-text">{instructions}</ul>
             <ul>{cuisines}</ul>
-            <span className="badge badge-pill badge-info mr-1">Ready in {recipe.readyInMinutes} minutes</span>
-            <span className="badge badge-pill badge-info mr-1">Enough for {recipe.servings} servings</span>
+            <span className="badge badge-pill badge-info mr-1">
+              Ready in {recipe.readyInMinutes} minutes
+            </span>
+            <span className="badge badge-pill badge-info mr-1">
+              Enough for {recipe.servings} servings
+            </span>
           </div>
         </div>
       )}
