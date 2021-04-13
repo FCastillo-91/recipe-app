@@ -8,6 +8,7 @@ export const AppStateProvider = ({ children, value }) => {
     selectedFreeFrom: [],
     recipeResults: [],
     recipe: {},
+    selectedCuisine: [],
   });
 
   const dispatch = (field, value) => {
@@ -23,6 +24,8 @@ export const AppStateProvider = ({ children, value }) => {
         setRecipeResults: (recipeResults) =>
           dispatch("recipeResults", recipeResults),
         setRecipe: (recipe) => dispatch("recipe", recipe),
+        setSelectedCuisine: (selectedCuisine) =>
+          dispatch("selectedCuisine", selectedCuisine),
         dispatch,
         ...state,
       }}

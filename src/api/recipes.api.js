@@ -10,11 +10,14 @@ const recipeFetch = async (endPoint, query = null) => {
   return data;
 };
 
-export const getRecipes = async (ingredients, intolerances = null) => {
+export const getRecipes = async (ingredients, intolerances = null, cuisines = null) => {
   const endPoint = `/recipes/search`;
   let query = `${ingredients.toString()}`;
   if (intolerances) {
     query += `&intolerances=${intolerances.toString()}`;
+  }
+  if (cuisines) {
+    query += `&cuisine=${cuisines.toString()}`
   }
   const recipes = await recipeFetch(endPoint, query);
   return recipes.results;

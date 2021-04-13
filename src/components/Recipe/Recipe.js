@@ -34,9 +34,16 @@ const Recipe = () => {
   }
 
   let instructions = null;
-  if (recipe.instructions) {
-    instructions = recipe.instructions.split(".").map((line) => {
-      return <p>{line}</p>;
+  if (recipe.analyzedInstructions) {
+    recipe.analyzedInstructions.map((instruct) => {
+      instructions = instruct.steps.map((item) => {
+        return (
+          <>
+            <h6>Step {item.number}</h6>
+            <p>{item.step}</p>
+          </>
+        );
+      });
     });
   }
 
@@ -52,8 +59,8 @@ const Recipe = () => {
             <h5>Method</h5>
             <ul className="card-text">{instructions}</ul>
             <ul>{cuisines}</ul>
-            <p>Ready in {recipe.readyInMinutes} minutes</p>
-            <p>Enough for {recipe.servings} servings</p>
+            <span className="badge badge-pill badge-info mr-1">Ready in {recipe.readyInMinutes} minutes</span>
+            <span className="badge badge-pill badge-info mr-1">Enough for {recipe.servings} servings</span>
           </div>
         </div>
       )}

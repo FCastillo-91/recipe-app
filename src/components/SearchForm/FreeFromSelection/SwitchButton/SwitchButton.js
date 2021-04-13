@@ -1,8 +1,9 @@
 import React from "react";
 
 const SwitchButton = ({id, label, onChange}) => {
+    const style = {minWidth: "200px"}
   return (
-      <div className="custom-control custom-switch custom-control-inline">
+      <div className="custom-control custom-switch custom-control-inline" style={style}>
         <input
           type="checkbox"
           className="custom-control-input"

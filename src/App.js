@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import intoleranceList from "./stubs/intoleranceList";
+import cuisineList from "./stubs/cuisineList";
 
 import Header from "../src/components/Header/Header";
 import SearchForm from "./components/SearchForm/SearchForm";
@@ -10,6 +11,7 @@ import { useAppState } from "./context/AppState";
 import banner from "../src/assets/banner.jpg";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { getRecipes } from "./api/recipes.api";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const {
@@ -17,6 +19,7 @@ const App = () => {
     recipeResults,
     setRecipeResults,
     selectedFreeFrom,
+    selectedCuisine,
   } = useAppState();
 
   const correctAmountOfIngredients = ingredients.length > 1;
@@ -24,7 +27,9 @@ const App = () => {
 
   const searchRecipes = async () => {
     if (correctAmountOfIngredients) {
-      await getRecipes(ingredients, selectedFreeFrom).then(setRecipeResults);
+      await getRecipes(ingredients, selectedFreeFrom, selectedCuisine).then(
+        setRecipeResults
+      );
       setHaveSearched(true);
     }
   };
@@ -41,6 +46,7 @@ const App = () => {
               <SearchForm
                 intolerances={intoleranceList.freeFrom}
                 searchRecipes={searchRecipes}
+                cuisines={cuisineList.cuisines}
               />
             </div>
             <div className="container">
@@ -64,6 +70,7 @@ const App = () => {
             </div>
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
